@@ -4,20 +4,22 @@ from socket import *
 import sys
 
 def webServer(port=13331):
+
   serverSocket = socket(AF_INET, SOCK_STREAM)
   
   #Prepare a server socket
   serverSocket.bind(("", port))
-  
-  #Fill in start
 
+  #Fill in start
+  serverSocket.listen(1)
   #Fill in end
 
   while True:
     #Establish the connection
     
     print('Ready to serve...')
-    connectionSocket, addr = #Fill in start -are you accepting connections?     #Fill in end
+    connectionSocket, addr =
+      server.accept()
     
     try:
       message = #Fill in start -a client is sending you a message   #Fill in end 
